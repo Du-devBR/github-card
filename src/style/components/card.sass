@@ -1,0 +1,80 @@
+@use '../variables'
+
+.container
+  display: flex
+  justify-content: space-around
+  align-items: center
+
+  .container_card
+    background: #000
+    border-radius: 50px
+    padding: 24px 16px
+    max-width: 438px
+    transition: 1s
+
+    .card
+      padding: 32px
+      display: flex
+      flex-direction: column
+      border-radius: 50px
+      background: variables.$bg-card
+      overflow: hidden
+
+      .header
+        display: flex
+        align-items: center
+        gap: 16px
+
+        .img
+          display: flex
+          align-items: center
+          justify-content: center
+          border: solid 1px white
+          border-radius: 100%
+          width: 55px
+          height: 55px
+
+
+      h1
+        color: variables.$text
+        font-size: 24px
+        font-weight: 500
+
+    .content
+
+      display: block
+      position: relative
+      margin: 32px 0
+
+      .avatar
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 372px
+        height: 370px
+        border-radius: 300px
+        border: solid 10px variables.$img-profile
+        overflow: hidden
+        margin-left: 76px
+
+        img
+          display: block
+          position: relative
+          width: 100%
+          height: 100%
+
+    .info
+      display: block
+      position: relative
+
+    .footer
+      display: flex
+      align-items: center
+      justify-content: flex-end
+      gap: 12px
+
+      p
+        color: variables.$text
+        font-size: 20px
+        font-weight: 500
+        text-transform: uppercase
